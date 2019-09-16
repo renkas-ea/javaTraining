@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package game;
 
 public class Main {
 
