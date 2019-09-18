@@ -17,6 +17,7 @@ public class Game {
             int scannerNum = scanner.nextInt();
             if (prevScanNum == null) {
                 prevScanNum = scannerNum;
+                //dt - зачем ?? 
                 continue;
             }
 
@@ -25,6 +26,7 @@ public class Game {
                 break;
             }
 
+            //dt - условия не покрывают все случаи. 
             if (Math.abs(prevScanNum - randomNum) > Math.abs(scannerNum - randomNum)) {
                 System.out.println("Горячо");
             } else if (Math.abs(prevScanNum - randomNum) < Math.abs(scannerNum - randomNum)) {
